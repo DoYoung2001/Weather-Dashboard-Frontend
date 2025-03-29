@@ -192,3 +192,64 @@ body {
 .cancelBtn:focus {
   outline: none;
 }
+
+/* 토글 스위치 버튼 스타일 */
+.toggleSwitch {
+  position: relative;
+  width: 60px;
+  height: 30px;
+  border-radius: 30px;
+  border: none;
+  background-color: #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding: 0;
+}
+
+/* 슬라이더(버튼)의 기본 스타일 */
+.toggleSwitch .slider {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: white;
+  transition: transform 0.3s ease; /* 슬라이더 이동에 부드러운 전환 효과 */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 슬라이더에 그림자 효과 */
+}
+
+/* 활성화된 상태의 스위치 스타일 */
+.toggleSwitch.on {
+  background-color: #9bbbcd;
+  outline: none;
+}
+
+/* 활성화된 상태의 슬라이더 이동 */
+.toggleSwitch.on .slider {
+  transform: translateX(30px);
+  outline: none;
+}
+
+/* 비활성화된 상태의 스위치 스타일 */
+.toggleSwitch.off {
+  background-color: #ccc;
+  outline: none;
+}
+
+/* 알림 설정 내용 레이아웃 */
+.alertContent {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  row-gap: 30px;
+  column-gap: 400px;
+  padding: 50px;
+  padding-top: 30px;
+  align-items: center;
+}
+
+/* 강하게 표시된 텍스트 스타일 */
+.alertContent strong {
+  color: rgb(0, 0, 0);
+  text-align: left;
+}
