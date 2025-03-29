@@ -418,3 +418,76 @@ body {
 .modalButtonBack:focus {
   outline: none;
 }
+
+/* 입력 필드 간격 조정 */
+.modalInputSpacing {
+  margin-bottom: 15px;
+}
+
+/* 오류 메시지 컨테이너 스타일 */
+.errorMessageContainer {
+  width: 73%; 
+  min-height: 30px; 
+  display: flex; 
+}
+
+/* 오류 메시지 스타일 */
+.errorMessage {
+  color: rgb(215, 30, 30); 
+  font-size: 9px; 
+  font-weight: bold; 
+  padding-top: 7px; 
+}
+
+/* 비밀번호 변경 버튼 스타일 */
+.modalButtonChange {
+  background-color: #cbcdd1; 
+  color: rgb(0, 0, 0); 
+  font-weight: bold; 
+  font-size: 10px; 
+  height: 25px; 
+  width: 70px; 
+  border-radius: 8px;
+  cursor: pointer; 
+  transition: background-color 0.2s;
+  border: none; 
+  outline: none; 
+  margin-right: 15px; 
+}
+
+/* 비밀번호 변경 버튼 호버(마우스 오버) 스타일 */
+.modalButtonChange:hover {
+  background-color: #78797a; 
+}
+
+/* 비밀번호 변경 버튼 포커스 스타일 */
+.modalButtonChange:focus {
+  outline: none; 
+}
+
+/* 취소 버튼 스타일 */
+.modalButtonCancle {
+  background-color: #000000; 
+  color: rgb(255, 255, 255);
+  font-weight: bold; 
+  font-size: 10px; 
+  height: 25px; 
+  width: 50px; 
+  border-radius: 8px; 
+  cursor: pointer; 
+  transition: background-color 0.2s; 
+  border: none; 
+  outline: none; 
+}
+
+/* 취소 버튼 호버(마우스 오버) 스타일 */
+.modalButtonCancle:hover {
+  background-color: #a1a3a4; 
+  color: black; 
+}
+
+/* 취소 버튼 포커스 스타일 */
+.modalButtonCancle:focus {
+  outline: none; 
+}
+
