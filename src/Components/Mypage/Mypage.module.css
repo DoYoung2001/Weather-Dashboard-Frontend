@@ -253,3 +253,48 @@ body {
   color: rgb(0, 0, 0);
   text-align: left;
 }
+
+/* 입력 필드 스타일 */
+.inputField {
+  border-radius: 5px;
+  color: #ffffff;
+  background-color: #54565e;
+  padding: 5px;
+  border: none;
+  outline: none;
+}
+
+/* 비밀번호 변경 버튼 스타일 */
+.changePasswordBtn {
+  background-color: #cbcdd1;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 10px;
+  height: 25px;
+  width: 90px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  border: none;
+  outline: none; /* 포커스시 아웃라인 없음 */
+}
+
+/* 비밀번호 변경 버튼 hover 상태 */
+.changePasswordBtn:hover {
+  background-color: #78797a;
+}
+
+/* 비밀번호 변경 버튼 focus 상태 */
+.changePasswordBtn:focus {
+  outline: none;
+}
+
+/* 버튼 컨테이너 스타일 */
+.buttonContainer {
+  grid-column: span 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
+}
