@@ -298,3 +298,123 @@ body {
   gap: 15px;
   margin-top: 10px;
 }
+
+/* 모달 배경 */
+.modalBackdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* 배경 어둡게 처리 */
+  display: flex;
+  justify-content: center; /* 모달을 수평 중앙에 배치 */
+  align-items: center; /* 모달을 수직 중앙에 배치 */
+  z-index: 1000; /* 다른 요소 위에 표시 */
+}
+
+/* 모달 콘텐츠 */
+.modalContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: white;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  width: 350px;
+  height: 300px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 모달 제목 */
+.modalTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+/* 비밀번호 입력 필드 */
+.modalInput {
+  width: 70%;
+  height: 15px;
+  padding: 7px;
+  border-radius: 5px;
+  background-color: #0d0d0d;
+  border: none;
+  outline: none;
+}
+
+/* 오류 메시지 컨테이너 */
+.errorMsgContainer {
+  width: 73%;
+  min-height: 30px;
+  display: flex;
+}
+
+/* 오류 메시지 스타일 */
+.errorMsg {
+  color: rgb(215, 30, 30);
+  font-size: 9px;
+  font-weight: bold;
+}
+
+/* 모달 버튼 영역 */
+.modalButtons {
+  margin-top: 30px;
+}
+
+/* 확인 버튼 스타일 */
+.modalButtonSave {
+  background-color: #cbcdd1;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 10px;
+  height: 25px;
+  width: 50px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  border: none;
+  outline: none;
+  margin-right: 15px;
+}
+
+/* 확인 버튼 호버 효과 */
+.modalButtonSave:hover {
+  background-color: #78797a;
+}
+
+/* 확인 버튼 포커스 효과 */
+.modalButtonSave:focus {
+  outline: none;
+}
+
+/* 취소 버튼 스타일 */
+.modalButtonBack {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 10px;
+  height: 25px;
+  width: 50px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  border: none;
+  outline: none;
+}
+
+/* 취소 버튼 호버 효과 */
+.modalButtonBack:hover {
+  background-color: #a1a3a4;
+  color: black;
+}
+
+/* 취소 버튼 포커스 효과 */
+.modalButtonBack:focus {
+  outline: none;
+}
