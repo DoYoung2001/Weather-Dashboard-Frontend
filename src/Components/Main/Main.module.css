@@ -1,0 +1,62 @@
+/* 전체 레이아웃 설정 */
+.app-container {
+  display: flex;
+  height: 100vh; /* 전체 화면 높이 */
+  overflow: hidden;
+}
+
+/* Main 콘텐츠 스타일 */
+.main-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-left: 250px; /* Sidebar 너비만큼 여백 확보 */
+  width: calc(100% - 250px);
+}
+
+/* 그리드 레이아웃 적용 */
+.weather-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2열 그리드 */
+  grid-auto-rows: minmax(120px, auto);
+  gap: 8px; /* 카드 간 여백 */
+  height: calc(100vh - 20px); /* 화면 전체 높이에서 패딩 제외 */
+  width: 100%;
+  background-color: blueviolet;
+}
+
+.weather-grid > div {
+  padding: 8px; /* 내부 패딩 줄이기 */
+  min-height: 120px; /* 최소 높이 설정 */
+  max-height: 250px; /* 최대 높이 제한 */
+  overflow: hidden; /* 내부 요소 넘칠 경우 숨기기 */
+  font-size: 14px; /* 폰트 크기 줄이기 */
+}
+
+/* 첫 번째 행 (위 2개 컴포넌트) */
+.weather-grid > div:nth-child(1),
+.weather-grid > div:nth-child(2) {
+  grid-column: span 1;
+}
+
+/* 두 번째, 세 번째 행 (아래 3개 컴포넌트) */
+.weather-grid > div:nth-child(3),
+.weather-grid > div:nth-child(4),
+.weather-grid > div:nth-child(5) {
+  grid-column: span 1;
+}
+
+/* 두 번째 행을 3열로 만들기 */
+.weather-grid > div:nth-child(3) {
+  grid-column: 1 / 2;
+}
+
+.weather-grid > div:nth-child(4) {
+  grid-column: 2 / 3;
+}
+
+.weather-grid > div:nth-child(5) {
+  grid-column: 1 / 3; /* 마지막 요소가 2개의 열을 차지하도록 설정 */
+}
