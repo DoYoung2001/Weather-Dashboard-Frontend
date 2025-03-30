@@ -1,0 +1,58 @@
+.weekly-forecast {
+  height: 100%;
+}
+
+.forecast-table {
+  margin-top: 15px;
+}
+
+.forecast-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.forecast-table td {
+  padding: 8px 5px;
+}
+
+.day-cell {
+  display: flex;
+  gap: 8px;
+}
+
+.day-name {
+  font-weight: 500;
+  width: 30px;
+}
+
+.sunday {
+  color: #fa5252;
+}
+
+.day-date {
+  color: #868e96;
+  font-size: 12px;
+}
+
+.icon-cell {
+  text-align: center;
+}
+
+.weather-icon-small {
+  font-size: 18px;
+}
+
+.temp-cell {
+  text-align: right;
+}
+
+.temp-range-small {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.today-row {
+  color: #fff;
+  background-color: #495057;
+  border-radius: 6px;
+}

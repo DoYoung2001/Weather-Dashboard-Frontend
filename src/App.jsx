@@ -1,24 +1,19 @@
-import React from "react";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom"; // Link import 추가
-import Mypage from "./Components/Mypage/Mypage"; // Mypage 컴포넌트 불러오기
-import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Main from "./Components/Main/Main";
+import Signup from "./Components/Signup/Signup";
+import Mypage from "./Components/Mypage/Mypage"; 
+import './App.css'
 
 function App() {
   return (
-    <BrowserRouter>
-      <nav>
-        {/* 메인 페이지와 마이페이지로 이동할 수 있는 링크 
-            임시라 메인 병합시 삭제될 예정            */}
-        <Link to="/">메인 페이지</Link>
-        <Link to="/mypage">마이페이지</Link>
-      </nav>
-
+    <Router>
       <Routes>
-        <Route path="/" element={<h1>메인 페이지</h1>} />
+        <Route path="/" element={<Main />} />
+        <Route path="/signup" element={<Signup />} />
         <Route path="/mypage" element={<Mypage />} />
       </Routes>
-    </BrowserRouter>
-  );
+    </Router>
+  )
 }
 
 export default App;

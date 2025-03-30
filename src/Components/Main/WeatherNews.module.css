@@ -1,0 +1,11 @@
+.weather-news {
+  display: flex;
+  flex-direction: column;
+}
+
+.news-content-empty {
+  flex: 1;
+  background-color: #f1f3f5;
+  border-radius: 8px;
+  min-height: 200px;
+}
