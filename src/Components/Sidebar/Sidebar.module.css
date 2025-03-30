@@ -1,0 +1,157 @@
+.sidebar {
+  width: 280px;
+  background-color: #8aa4be;
+  padding: 20px;
+  overflow-y: auto;
+  border-right: 1px solid #0b4d8e;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  height: 100vh; /* 높이를 화면 전체로 설정 */
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1000;
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #1f63a7;
+}
+
+.profile-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-name {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.status-badge {
+  background-color: #212529;
+  color: white;
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 10px;
+}
+
+.weather-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  background-color: #85b7ea;
+  border-radius: 8px;
+}
+
+.weather-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.location-label {
+  font-size: 12px;
+  color: #495057;
+}
+
+.alert-badge {
+  background-color: #ff6b6b;
+  color: white;
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 10px;
+}
+
+.sidebar-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #495057;
+}
+
+.section-icon {
+  color: #228be6;
+}
+
+.recommendation-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  background-color: #e9ecef;
+  border-radius: 8px;
+}
+
+.recommendation-text {
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.recommendation-subtext {
+  font-size: 10px;
+  color: #868e96;
+}
+
+.current-weather {
+  background-color: #e9ecef;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.weather-location-small {
+  font-size: 12px;
+  color: #495057;
+}
+
+.weather-display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.weather-cloud-icon {
+  font-size: 24px;
+}
+
+.weather-temp {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.weather-details {
+  font-size: 11px;
+  color: #495057;
+  text-align: center;
+}
+
+.device-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.device-item {
+  font-size: 12px;
+  color: #495057;
+  padding: 4px 0;
+}
