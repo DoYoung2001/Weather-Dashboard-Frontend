@@ -13,10 +13,10 @@ const UserInfo = ({ userInfo, setUserInfo }) => {
     setShowConfirm(true);
   };
 
-  // 회원 탈퇴 확인 시 메인 페이지로 이동
+  // 회원 탈퇴 확인 시 회원가입 페이지로 이동
   const confirmDelete = () => {
     alert("회원 탈퇴가 완료되었습니다.");
-    navigate("/");
+    navigate("/Signup");
   };
 
   return (

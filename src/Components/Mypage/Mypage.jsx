@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import UserInfo from "./UserInfo";
+import Sidebar from "../Sidebar/Sidebar";
 import AlertSettings from "./AlertSettings";
 import styles from "./Mypage.module.css";
 
@@ -30,24 +31,31 @@ const Mypage = () => {
   }, []);
 
   return (
-    <div className={styles.mypageContainer}>
-      <section className={styles.subjectSection}>
-        <h2>마이페이지</h2>
-      </section>
+    <div className={styles["app-container"]}>
+      {/* 사이드바 추가 */}
+      <div className={styles.sidebarWrapper}>
+        <Sidebar />
+      </div>
 
-      {/* 사용자 정보 표시 및 수정 */}
-      <UserInfo userInfo={userInfo} setUserInfo={setUserInfo} />
+      {/* 마이페이지 영역 */}
+      <div className={styles.mypageContainer}>
+        <section className={styles.subjectSection}>
+          <h2>마이페이지</h2>
+        </section>
 
-      {/* 알림 설정 */}
-      <AlertSettings
-        weatherAlert={weatherAlert}
-        setWeatherAlert={setWeatherAlert}
-        specialAlert={specialAlert}
-        setSpecialAlert={setSpecialAlert}
-      />
+        {/* 사용자 정보 표시 및 수정 */}
+        <UserInfo userInfo={userInfo} setUserInfo={setUserInfo} />
+
+        {/* 알림 설정 */}
+        <AlertSettings
+          weatherAlert={weatherAlert}
+          setWeatherAlert={setWeatherAlert}
+          specialAlert={specialAlert}
+          setSpecialAlert={setSpecialAlert}
+        />
+      </div>
     </div>
   );
 };
 
 export default Mypage;
-
